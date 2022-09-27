@@ -20,14 +20,22 @@ cómo se obtiene el token. Para ello, necesitamos saber de dónde salen TODOS lo
 4. ¿A qué puerto se reciben normalmente las peticiones del protocolo HTTP? ¿A qué
 capa del modelo TCP/IP se encuentra el protocolo HTTP? ¿Y los protocolos TCP,
 UDP, e IP?
-.
+# -En TCP el puerto por defecto, para un servidor HTTP en ordenador, es el puerto 80. Se pueden usar otros puertos como el 8000 o el 8080.
+¿A qué
+capa del modelo TCP/IP se encuentra el protocolo HTTP?
+# -Opera en la capa de red OSI o de Internet en TCP/IP y es un protocolo no orientado a conexión, por lo que en definitiva se encarga de llevar de datos de un punto a otro.
+UDP:
+# -UDP pertenece a la familia de protocolos de Internet, por lo que debe clasificarse en el nivel de transporte y, en consecuencia, se encuentra en una capa intermedia entre la capa de red y la capa de aplicación.
+
 5. ¿Cuál es el significado de la siguiente respuesta de un servidor?
 HTTP/1.1 302 Found
 Location: http://www.example.com/test/index2.php
-.
+
+# -El código de estado de redirección HTTP 302 Found indica que el recurso solicitado ha sido movido temporalmente a la URL dada por las cabeceras Location (en-US).
+
 6. Utilizando el filtro de captura para la interfaz de red de Wireshark, analiza la petición
 al host: www.google.com. Mostrando la cabecera IP, la dirección IP de tu ordenador y
 la del servidor. Comprueba que, poniendo esa IP en el navegador, accedas a Google.
-# -HTTP/1.1 302 Found
+# - www.google.com
 
 
